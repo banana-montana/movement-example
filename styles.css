@@ -1,0 +1,39 @@
+.container {
+	width: 100%;
+}
+
+.movement {
+	position: relative;
+}
+
+.bg-img img {
+	padding: 20px 0 0 20px;
+	width: 40%;
+	z-index: 1;
+}
+
+.rotate-icon img { 
+	width: 8%;
+	position: absolute;
+	transition: all 0.5s ease-in-out 0s; 
+	z-index: 2;
+	top: 30px;
+	left: 30px;
+}
+
+.rotate-icon img:hover {
+	cursor: default;
+	transform: rotate(180deg);
+	transition: all 0.9s ease-in-out 0s;
+}
+
+.zoom-in img {
+	width: 30%;
+  padding: 20px;
+  transition: transform 0.3s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom-in img:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
